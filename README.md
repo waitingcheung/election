@@ -1,6 +1,7 @@
 # election
 
 [![Build Status](https://travis-ci.org/waitingcheung/election.svg?branch=master)](https://travis-ci.org/waitingcheung/election)
+[![codecov](https://codecov.io/gh/waitingcheung/election/branch/master/graph/badge.svg)](https://codecov.io/gh/waitingcheung/election)
 
 This program computes all pure Nash equilibria of a 2-party election game described in the paper:
 
