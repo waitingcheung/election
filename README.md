@@ -35,6 +35,12 @@ their corresponding utility profiles, like:
 ...
 ```
 
+### Compilation
+
+```sh
+mvn compile
+```
+
 ### Execution
 
 ```sh
