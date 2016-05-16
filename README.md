@@ -49,6 +49,12 @@ mvn compile
 
 For example, running "./hklc examples/exampleX" will produce the outputs for the generated test files. The file hklc is a shell script that calls the java classes. In case there is permission problem in running hklc please run "chmod +x ./hklc".
 
+### Testing
+
+```sh
+mvn test
+```
+
 ### Heuristics
 
 This program reduces the search space by eliminating strategies of one party that do not produce the highest payoffs for each known strategy of another party. Then it validates in the reduced search space if each pair of strategies is nash equilibrium. Before comparing each payoff in validation, it uses a heurisitc that sorts the payoffs of all lists in both parties and combines the remaining votes of a party to see if the combined lists can make them a higher ranking in the sorted list. Such heuristic reduces the likelihood of exhausive comparisions of all payoffs in the reduced search space as for each pair of strategies there are at most 20 lists to sort for 10x10 input size. To reduce the need for repeated computations, it stores most of the intermediate results in hashmaps for quick lookup.
